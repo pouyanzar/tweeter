@@ -1,0 +1,32 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  color: #545149;
+  font-weight: bold; 
+}
+form textarea {
+  resize: none;
+  height: 40px;
+  background-color: #f4f1ec;
+  border: none;
+  outline: none;
+  border-bottom:  #545149 solid 4px;
+}
+.form-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', sans-serif;
+  margin-top: .5rem;
+}
+.form-bottom-section button {
+  background-color: #4056A1;
+  color: #ffffff;
+  padding: .25rem .5rem;
+}
+.counter {
+  color: #545149;
+}
