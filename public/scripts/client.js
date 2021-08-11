@@ -56,12 +56,12 @@ const createTweetElement = function(tweet) {
 }
 
 const renderTweets = function(tweets) {
+  $(document).ready(function() {
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $(document).ready(function() {
       $('#tweets-container').append($tweet);
-    })
-  }
+    }
+  })
 }
 
 renderTweets(data);
