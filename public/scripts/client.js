@@ -55,13 +55,26 @@ const createTweetElement = function(tweet) {
   return $tweet;
 }
 
+const formHandler = function($text) {
+  $.ajax({
+    url:'/tweets/', 
+    type: 'POST',
+    data: $text
+  })
+};
+
 const renderTweets = function(tweets) {
-  $(document).ready(function() {
   for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-      $('#tweets-container').append($tweet);
-    }
-  })
-}
+    $('#tweets-container').append($tweet);
+  }
+};
 
-renderTweets(data);
+$(document).ready(function() {
+  renderTweets(data);
+  $('#form').submit(function(e) {
+    e.preventDefault();
+    $text = $(this).serialize();
+    formHandler($text);
+  })
+})
