@@ -30,6 +30,12 @@ const createTweetElement = function(tweet) {
 }
 
 const formHandler = function($text) {
+  if ($text.length <= 5) {
+    return alert("Your tweet is empty");
+  }
+  if ($text.length >= 145) {
+    return alert("You have exceeded maximum character!!!");
+  }
   $.ajax({
     url:'/tweets/', 
     method: 'POST',
@@ -54,6 +60,7 @@ $(document).ready(function() {
   $('#form').submit(function(e) {
     e.preventDefault();
     $text = $(this).serialize();
+    console.log($text)
     formHandler($text);
   })
 })
