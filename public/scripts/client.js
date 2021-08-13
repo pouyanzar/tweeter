@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     //Checks if the types characters are in range
     if (tweet.length > 140) {
-      const message = `${icon} You have exceeded maximum character ${icon}`;
+      const message = `${icon} You have exceeded maximum characters ${icon}`;
       return errorHandler($(".error"), message);
     }
 
