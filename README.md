@@ -15,3 +15,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Tweet Box Page"](https://github.com/pouyanzar/tweeter/blob/master/docs/tweet-box-png.png?raw=true)
+
+!["Tablet size Tweeter"](https://github.com/pouyanzar/tweeter/blob/master/docs/tablet-size-tweeter.png?raw=true)
+
+!["Error handling example"](https://github.com/pouyanzar/tweeter/blob/master/docs/error-exceed-tweet.png?raw=true)
+
+
