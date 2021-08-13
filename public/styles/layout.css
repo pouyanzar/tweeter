@@ -33,3 +33,19 @@ body {
    width: 90%;
    background-color: #f4f1ec;
  }
+
+ @media only screen and (min-width: 1024px) {
+   
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-top: 5rem;
+  }
+  .container {
+    width: 70vw;
+    min-width: 600px;
+    padding-right: 2em;
+  }
+ }

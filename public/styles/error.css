@@ -1,0 +1,11 @@
+/* Error handling styling */
+.error {
+  display: none;
+  border: #ff0000 5px solid;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 1em;
+  padding: .5em;
+}
